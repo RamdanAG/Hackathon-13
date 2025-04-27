@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hackathon13-app-backend": {
+      "main": "src/hackathon13-app-backend/main.mo",
+      "type": "motoko"
+    },
+    "hackathon13-app-frontend": {
+      "dependencies": [
+        "hackathon13-app-backend"
+      ],
+      "source": [
+        "src/hackathon13-app-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hackathon13-app-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
